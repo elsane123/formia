@@ -576,6 +576,14 @@ function catClass(cat) {
   return CAT_CLASS[cat] || 'mooc-plateformes';
 }
 
+function jsSlugify(text) {
+  text = text.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  text = text.toLowerCase();
+  text = text.replace(/[^\w\s-]/g,'');
+  text = text.replace(/[\s_]+/g,'-');
+  text = text.replace(/-+/g,'-');
+  return text.replace(/^-+|-+$/g,'');
+}
 function buildCard(f) {
   var cat = f['\u0043at\u00e9gorie'] || '';
   var nom = f['Nom de la formation'] || '';
@@ -588,6 +596,7 @@ function buildCard(f) {
   var certif = f['Certifiante'] || '';
   var desc = f['Description'] || '';
   var url = f['URL'] || '#';
+  var slug = jsSlugify(nom);
 
   var cc = catClass(cat);
   var levelCls = getLevelClass(niveau);
@@ -622,7 +631,7 @@ function buildCard(f) {
   html += '</div>';
   html += '<div style="display:flex;align-items:center;gap:8px">';
   html += '<span class="card-lang" title="' + escHtml(langue) + '">' + flag + '</span>';
-  html += '<a href="' + escHtml(url) + '" target="_blank" rel="noopener" class="btn-voir">Voir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>';
+  html += '<a href="formations/' + slug + '.html" class="btn-voir">Voir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>';
   html += '</div>';
   html += '</div></div>';
   return html;
