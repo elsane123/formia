@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FormIA – Comparateur de Formations IA 2025-2026 | 72 formations en intelligence artificielle</title>
+<meta name="description" content="Trouvez la meilleure formation en intelligence artificielle. Comparateur de 72 formations IA : bootcamps, certifications, MOOCs, formations académiques et influenceurs FR.">
+<meta name="keywords" content="formation intelligence artificielle, formation IA 2025, certification IA, bootcamp IA, prompt engineering, machine learning, deep learning">
+<link rel="canonical" href="https://formia.fr">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FormIA – Comparateur de Formations IA 2025-2026">
+<meta property="og:description" content="Trouvez la meilleure formation en intelligence artificielle. Comparateur de 72 formations IA : bootcamps, certifications, MOOCs et influenceurs FR.">
+<meta property="og:url" content="https://formia.fr">
+<meta property="og:image" content="https://formia.fr/og-image.png">
+<meta property="og:site_name" content="FormIA">
+<meta property="og:locale" content="fr_FR">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FormIA – Comparateur de Formations IA 2025-2026">
+<meta name="twitter:description" content="Comparateur de 72 formations IA : bootcamps, certifications, MOOCs, formations académiques et influenceurs FR.">
+<meta name="twitter:image" content="https://formia.fr/og-image.png">
+<meta name="twitter:site" content="@FormIA_fr">
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F172A; --navy-800: #1E293B; --navy-700: #334155;
+  --blue: #3B82F6; --blue-dark: #2563EB; --blue-light: #60A5FA;
+  --blue-glow: rgba(59,130,246,0.15);
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC; --gray-100: #F1F5F9; --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1; --gray-400: #94A3B8; --gray-500: #64748B;
+  --gray-600: #475569; --gray-700: #334155;
+  --green: #10B981; --green-bg: #ECFDF5; --green-text: #065F46;
+  --orange: #F59E0B; --orange-bg: #FFFBEB; --orange-text: #92400E;
+  --red: #EF4444; --red-bg: #FEF2F2; --red-text: #991B1B;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 14px; --radius-sm: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 20px rgba(0,0,0,0.06);
+  --shadow-hover: 0 14px 40px rgba(59,130,246,0.22), 0 2px 8px rgba(0,0,0,0.08);
+  --transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); background: var(--gray-50); color: var(--navy-800); line-height: 1.6; min-height: 100vh; }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0F172A 0%, #1a2744 45%, #0d1f3c 100%);
+  position: relative; overflow: hidden; padding: 80px 24px 88px; text-align: center;
+}
+.hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 900px 500px at 15% 50%, rgba(59,130,246,0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 700px 400px at 85% 40%, rgba(139,92,246,0.1) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 300px at 50% 90%, rgba(6,182,212,0.07) 0%, transparent 70%);
+}
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+  background-size: 52px 52px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.logo-wrap { display: inline-flex; align-items: center; gap: 18px; margin-bottom: 28px; cursor: default; }
+.logo-icon { width: 68px; height: 68px; flex-shrink: 0; filter: drop-shadow(0 0 22px rgba(59,130,246,0.8)); }
+.logo-textblock { display: flex; flex-direction: column; align-items: flex-start; }
+.logo-name {
+  font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1;
+  background: linear-gradient(135deg, #ffffff 0%, #93C5FD 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.logo-badge { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; color: var(--blue-light); text-transform: uppercase; margin-top: 5px; }
+.hero-tagline { font-size: 1.25rem; color: rgba(255,255,255,0.78); margin-bottom: 10px; font-weight: 400; }
+.hero-sub { font-size: 0.88rem; color: rgba(255,255,255,0.42); }
+.hero-dots { display: flex; gap: 8px; justify-content: center; margin-top: 36px; }
+.hero-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2); animation: pdot 2s ease-in-out infinite; }
+.hero-dot:nth-child(2) { animation-delay: 0.35s; }
+.hero-dot:nth-child(3) { animation-delay: 0.7s; }
+@keyframes pdot { 0%,100%{opacity:0.3;transform:scale(1);}50%{opacity:1;transform:scale(1.45);} }
+
+/* ===== STATS ===== */
+.stats-banner { background: var(--white); border-bottom: 1px solid var(--gray-200); }
+.stats-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); }
+.stat-item {
+  text-align: center; padding: 32px 20px;
+  border-right: 1px solid var(--gray-100); transition: background var(--transition);
+  position: relative; overflow: hidden;
+}
+.stat-item:last-child { border-right: none; }
+.stat-item:hover { background: var(--gray-50); }
+.stat-item::before {
+  content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 0; height: 3px; background: linear-gradient(90deg,var(--blue),#6366F1);
+  transition: width 0.35s ease; border-radius: 99px;
+}
+.stat-item:hover::before { width: 60%; }
+.stat-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+.stat-num {
+  font-size: 2.8rem; font-weight: 800; line-height: 1; margin-bottom: 5px;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.stat-label { font-size: 0.78rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; }
+
+/* ===== FILTERS ===== */
+.filters-section {
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.filters-inner { max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-direction: column; gap: 10px; }
+.search-row { display: flex; align-items: center; gap: 12px; }
+.search-wrap { flex: 1; position: relative; }
+.search-ico { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--gray-400); pointer-events: none; }
+.search-input {
+  width: 100%; padding: 10px 14px 10px 42px;
+  border: 1.5px solid var(--gray-200); border-radius: var(--radius-sm);
+  font-size: 0.93rem; font-family: var(--font); background: var(--gray-50);
+  color: var(--navy-800); transition: border-color var(--transition), box-shadow var(--transition); outline: none;
+}
+.search-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-glow); background: var(--white); }
+.search-input::placeholder { color: var(--gray-400); }
+.results-count { font-size: 0.82rem; color: var(--gray-500); white-space: nowrap; font-weight: 600; min-width: 90px; text-align: right; }
+.pills-row { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+.pills-label { font-size: 0.72rem; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.08em; margin-right: 2px; white-space: nowrap; }
+.pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 11px; border-radius: 999px;
+  font-size: 0.74rem; font-weight: 600; cursor: pointer;
+  border: 1.5px solid transparent; transition: all var(--transition);
+  background: var(--gray-100); color: var(--gray-600); user-select: none;
+}
+.pill:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.pill.active { border-color: currentColor; filter: saturate(1.2); box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+.pill-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.pill-all { background: var(--navy-800); color: var(--white); }
+.pill-all.active { background: var(--blue); border-color: var(--blue); }
+
+/* ===== MAIN ===== */
+.main-content { max-width: 1200px; margin: 0 auto; padding: 40px 24px 72px; }
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
+.section-title { font-size: 0.93rem; color: var(--gray-500); font-weight: 500; }
+.section-title strong { color: var(--navy-800); font-size: 1rem; font-weight: 700; }
+.empty-state { text-align: center; padding: 80px 24px; color: var(--gray-500); display: none; }
+.empty-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.empty-state h3 { font-size: 1.2rem; color: var(--gray-600); margin-bottom: 8px; font-weight: 600; }
+.empty-state p { font-size: 0.9rem; }
+.cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+
+/* ===== CARD ===== */
+.card {
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: var(--shadow); display: flex; flex-direction: column;
+  border: 1px solid var(--gray-200);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  overflow: hidden;
+}
+.card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(59,130,246,0.28); }
+.card-accent { height: 4px; width: 100%; flex-shrink: 0; }
+.card-body { padding: 18px 18px 14px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 9px; border-radius: 999px;
+  font-size: 0.69rem; font-weight: 700; letter-spacing: 0.02em; white-space: nowrap;
+}
+.badge-level-deb { background: var(--green-bg); color: var(--green-text); }
+.badge-level-int { background: var(--orange-bg); color: var(--orange-text); }
+.badge-level-adv { background: var(--red-bg); color: var(--red-text); }
+.badge-level-other { background: #EEF2FF; color: #3730A3; }
+.badge-certif { background: #F0FDF4; color: #166534; }
+.badge-free { background: #ECFDF5; color: #065F46; }
+.card-title { font-size: 0.98rem; font-weight: 700; color: var(--navy-800); line-height: 1.35; }
+.card-meta { display: flex; flex-direction: column; gap: 4px; }
+.card-meta-row { display: flex; align-items: center; gap: 7px; font-size: 0.8rem; color: var(--gray-500); }
+.card-meta-row svg { width: 13px; height: 13px; flex-shrink: 0; color: var(--gray-400); }
+.card-meta-val { color: var(--gray-600); font-weight: 500; }
+.card-themes { display: flex; flex-wrap: wrap; gap: 5px; }
+.theme-tag {
+  padding: 2px 7px; border-radius: 4px;
+  font-size: 0.67rem; font-weight: 600; background: var(--gray-100); color: var(--gray-500);
+  border: 1px solid var(--gray-200);
+}
+.card-desc { font-size: 0.82rem; color: var(--gray-500); line-height: 1.5; flex: 1; }
+.card-footer { padding: 12px 18px 16px; border-top: 1px solid var(--gray-100); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.card-price { font-size: 0.9rem; font-weight: 700; color: var(--navy-800); }
+.card-price.free { color: var(--green); }
+.card-lang { font-size: 1rem; }
+.btn-voir {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 7px 14px; border-radius: var(--radius-sm);
+  background: var(--blue); color: var(--white);
+  font-size: 0.78rem; font-weight: 700; text-decoration: none;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  white-space: nowrap;
+}
+.btn-voir:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(59,130,246,0.4); }
+.btn-voir svg { width: 12px; height: 12px; }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--navy); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 40px 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-logo { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 12px; }
+.footer-logo-icon { width: 28px; height: 28px; opacity: 0.7; }
+.footer-logo-name { font-size: 1.1rem; font-weight: 800; color: rgba(255,255,255,0.7); letter-spacing: -0.02em; }
+.footer-text { font-size: 0.8rem; line-height: 1.6; }
+.footer-text a { color: var(--blue-light); text-decoration: none; }
+.footer-text a:hover { text-decoration: underline; }
+
+/* ===== CATEGORY COLORS ===== */
+.cat-influenceurs { background: #F3E8FF; color: #6B21A8; }
+.cat-mooc-plateformes { background: #DBEAFE; color: #1E40AF; }
+.cat-mooc-gratuits { background: #DCFCE7; color: #14532D; }
+.cat-bootcamp-fr { background: #FEF3C7; color: #92400E; }
+.cat-bootcamp-en { background: #FEE2E2; color: #991B1B; }
+.cat-certif-gafam { background: #EDE9FE; color: #4C1D95; }
+.cat-certif-cloud { background: #CFFAFE; color: #164E63; }
+.cat-formations-acad { background: #E0F2FE; color: #0C4A6E; }
+.cat-univ { background: #FEF9C3; color: #713F12; }
+.cat-metiers { background: #FCE7F3; color: #831843; }
+
+/* Accent colors per category */
+.accent-influenceurs { background: linear-gradient(90deg,#8B5CF6,#A855F7); }
+.accent-mooc-plateformes { background: linear-gradient(90deg,#3B82F6,#2563EB); }
+.accent-mooc-gratuits { background: linear-gradient(90deg,#10B981,#059669); }
+.accent-bootcamp-fr { background: linear-gradient(90deg,#F59E0B,#D97706); }
+.accent-bootcamp-en { background: linear-gradient(90deg,#EF4444,#DC2626); }
+.accent-certif-gafam { background: linear-gradient(90deg,#6366F1,#4F46E5); }
+.accent-certif-cloud { background: linear-gradient(90deg,#06B6D4,#0891B2); }
+.accent-formations-acad { background: linear-gradient(90deg,#0EA5E9,#0284C7); }
+.accent-univ { background: linear-gradient(90deg,#F59E0B,#B45309); }
+.accent-metiers { background: linear-gradient(90deg,#EC4899,#DB2777); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .cards-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 640px) {
+  .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+  .hero { padding: 56px 16px 64px; }
+  .logo-name { font-size: 2.2rem; }
+  .logo-icon { width: 52px; height: 52px; }
+  .logo-wrap { gap: 12px; }
+  .hero-tagline { font-size: 1.05rem; }
+  .stats-inner { grid-template-columns: 1fr; }
+  .stat-item { border-right: none; border-bottom: 1px solid var(--gray-100); padding: 22px 20px; }
+  .stat-item:last-child { border-bottom: none; }
+  .stat-num { font-size: 2.2rem; }
+  .filters-inner { padding: 12px 16px; }
+  .main-content { padding: 24px 16px 56px; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+  .card-footer { flex-wrap: wrap; }
+}
+@media (max-width: 400px) {
+  .pills-row { gap: 5px; }
+  .pill { font-size: 0.7rem; padding: 3px 8px; }
+}
+.badge-level-deb { background: var(--green-bg); color: var(--green-text); }</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://formia.fr/#website",
+      "url": "https://formia.fr",
+      "name": "FormIA",
+      "description": "Comparateur de formations en intelligence artificielle 2025-2026",
+      "inLanguage": "fr-FR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type": "EntryPoint", "urlTemplate": "https://formia.fr/?q={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://formia.fr/#formations",
+      "name": "Top formations en intelligence artificielle 2025",
+      "numberOfItems": 10,
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"item":{"@type":"Course","name":"Formation ChatflowAI","description":"Formation modulaire IA business pour entrepreneurs, automatisation et prompt engineering.","provider":{"@type":"Organization","name":"Yassine Sdiri - ChatflowAI"},"url":"https://www.skool.com/intelligenceartificielle/about","inLanguage":"fr","offers":{"@type":"Offer","price":"72","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":2,"item":{"@type":"Course","name":"AI Business Academy (AIBA)","description":"Accompagnement long terme pour construire un business autour de l'IA generative.","provider":{"@type":"Organization","name":"AIBA"},"url":"https://formia.fr","inLanguage":"fr","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":3,"item":{"@type":"Course","name":"Machine Learning Specialization - Andrew Ng","description":"Specialisation ML de reference mondiale : regression, reseaux de neurones, algorithmes modernes.","provider":{"@type":"Organization","name":"DeepLearning.AI via Coursera"},"url":"https://www.coursera.org/specializations/machine-learning-introduction","inLanguage":"en","offers":{"@type":"Offer","price":"39","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":4,"item":{"@type":"Course","name":"ChatGPT Prompt Engineering for Developers","description":"Formation gratuite DeepLearning.AI et OpenAI sur le prompt engineering pour developpeurs.","provider":{"@type":"Organization","name":"DeepLearning.AI"},"url":"https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":5,"item":{"@type":"Course","name":"Google Data Analytics Professional Certificate","description":"Certification Google pour maitriser l'analyse de donnees et les outils IA.","provider":{"@type":"Organization","name":"Google via Coursera"},"url":"https://www.coursera.org/professional-certificates/google-data-analytics","inLanguage":"fr","offers":{"@type":"Offer","price":"39","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":6,"item":{"@type":"Course","name":"Microsoft Azure AI Fundamentals (AI-900)","description":"Certification officielle Microsoft sur les fondamentaux de l'IA et du ML sur Azure.","provider":{"@type":"Organization","name":"Microsoft"},"url":"https://learn.microsoft.com/fr-fr/certifications/azure-ai-fundamentals/","inLanguage":"fr","offers":{"@type":"Offer","price":"165","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":7,"item":{"@type":"Course","name":"IBM AI Engineering Professional Certificate","description":"Certificat professionnel IBM : ML, deep learning et deploiement de modeles en production.","provider":{"@type":"Organization","name":"IBM via Coursera"},"url":"https://www.coursera.org/professional-certificates/ai-engineer","inLanguage":"en","offers":{"@type":"Offer","price":"39","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":8,"item":{"@type":"Course","name":"Le Wagon Data Science & AI Bootcamp","description":"Bootcamp intensif 9 semaines : Python, ML, deep learning et deploiement. Full-time ou part-time.","provider":{"@type":"Organization","name":"Le Wagon"},"url":"https://www.lewagon.com/fr/data-science-course","inLanguage":"fr","offers":{"@type":"Offer","price":"7990","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":9,"item":{"@type":"Course","name":"AWS Certified Machine Learning Specialty","description":"Certification AWS pour ingenieurs ML : conception et deploiement sur Amazon Web Services.","provider":{"@type":"Organization","name":"Amazon Web Services"},"url":"https://aws.amazon.com/fr/certification/certified-machine-learning-specialty/","inLanguage":"en","offers":{"@type":"Offer","price":"300","priceCurrency":"EUR"}}},
+        {"@type":"ListItem","position":10,"item":{"@type":"Course","name":"Certificat Universitaire IA - Paris-Saclay","description":"Formation universitaire francaise sur l'IA appliquee : ML, deep learning et applications metier.","provider":{"@type":"Organization","name":"Universite Paris-Saclay"},"url":"https://www.universite-paris-saclay.fr","inLanguage":"fr","offers":{"@type":"Offer","price":"1500","priceCurrency":"EUR"}}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-content">
+<div class="logo-wrap">
+<svg class="logo-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="38" fill="#1e3a5f" stroke="#3B82F6" stroke-width="1.5"/>
+  <circle cx="40" cy="20" r="5" fill="#60A5FA"/>
+  <circle cx="40" cy="60" r="5" fill="#60A5FA"/>
+  <circle cx="20" cy="40" r="5" fill="#60A5FA"/>
+  <circle cx="60" cy="40" r="5" fill="#60A5FA"/>
+  <circle cx="25" cy="25" r="4" fill="#93C5FD"/>
+  <circle cx="55" cy="25" r="4" fill="#93C5FD"/>
+  <circle cx="25" cy="55" r="4" fill="#93C5FD"/>
+  <circle cx="55" cy="55" r="4" fill="#93C5FD"/>
+  <circle cx="40" cy="40" r="7" fill="#3B82F6"/>
+  <line x1="40" y1="25" x2="40" y2="33" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="40" y1="47" x2="40" y2="55" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="25" y1="40" x2="33" y2="40" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="47" y1="40" x2="55" y2="40" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="29" y1="29" x2="35" y2="35" stroke="#93C5FD" stroke-width="1.2"/>
+  <line x1="51" y1="29" x2="45" y2="35" stroke="#93C5FD" stroke-width="1.2"/>
+  <line x1="29" y1="51" x2="35" y2="45" stroke="#93C5FD" stroke-width="1.2"/>
+  <line x1="51" y1="51" x2="45" y2="45" stroke="#93C5FD" stroke-width="1.2"/>
+  <circle cx="40" cy="20" r="2.5" fill="#BFDBFE"/>
+  <circle cx="40" cy="60" r="2.5" fill="#BFDBFE"/>
+  <circle cx="20" cy="40" r="2.5" fill="#BFDBFE"/>
+  <circle cx="60" cy="40" r="2.5" fill="#BFDBFE"/>
+</svg>
+<div class="logo-textblock">
+<span class="logo-name">FormIA</span>
+<span class="logo-badge">Annuaire formations IA 2025&#8209;2026</span>
+</div></div>
+<p class="hero-tagline">Trouvez la formation IA qui vous correspond</p>
+<p class="hero-sub">72 formations sélectionnées &bull; Toutes catégories &bull; Tous niveaux</p>
+<div class="hero-dots"><span class="hero-dot"></span><span class="hero-dot"></span><span class="hero-dot"></span></div>
+</div></header>
+<section class="stats-banner">
+<div class="stats-inner">
+<div class="stat-item"><span class="stat-icon">🧠</span><div class="stat-num">72</div><div class="stat-label">Formations répertoriées</div></div>
+<div class="stat-item"><span class="stat-icon">🟢</span><div class="stat-num">17</div><div class="stat-label">Formations gratuites</div></div>
+<div class="stat-item"><span class="stat-icon">🎫</span><div class="stat-num">57</div><div class="stat-label">Formations certifiantes</div></div>
+</div></section>
+<nav class="filters-section">
+<div class="filters-inner">
+<div class="search-row">
+<div class="search-wrap">
+<span class="search-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
+<input type="search" id="searchInput" class="search-input" placeholder="Rechercher par nom, créateur, thématique..." autocomplete="off">
+</div>
+<span class="results-count" id="resultsCount">72 formations</span>
+</div>
+<div class="pills-row" id="pillsContainer"></div>
+</div></nav>
+<main class="main-content">
+<div class="section-header">
+<p class="section-title">Affichage de <strong id="countDisplay">72 formations</strong></p>
+</div>
+<div class="empty-state" id="emptyState">
+<div class="empty-icon">🔍</div>
+<h3>Aucune formation trouvée</h3>
+<p>Essayez d’autres mots-clés ou sélectionnez une autre catégorie.</p>
+</div>
+<div class="cards-grid" id="cardsGrid"></div>
+</main>
+
+<!-- ===== BLOG SECTION ===== -->
+<section class="blog-section">
+  <div class="blog-inner">
+    <div class="blog-header">
+      <h2 class="blog-title">📝 Blog &amp; Guides</h2>
+      <p class="blog-subtitle">Conseils et analyses pour choisir votre formation IA</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-card-accent"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">📅 4 mai 2025</span>
+            <span class="blog-read">⏱ 8 min de lecture</span>
+          </div>
+          <h3 class="blog-card-title">Quelle formation en IA choisir en 2025 ?</h3>
+          <p class="blog-card-excerpt">Débutant, entrepreneur, développeur ou en reconversion ? Notre guide complet vous aide à trouver la formation IA idéale selon votre profil.</p>
+          <a href="blog/quelle-formation-ia-choisir-2025.html" class="blog-card-link">
+            Lire l'article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<style>
+.blog-section {
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  padding: 64px 24px;
+}
+.blog-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.blog-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.blog-subtitle {
+  font-size: 0.95rem;
+  color: var(--gray-500);
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+.blog-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(59,130,246,0.3);
+}
+.blog-card-accent {
+  height: 4px;
+  background: linear-gradient(90deg, #3B82F6, #6366F1);
+}
+.blog-card-body {
+  padding: 24px;
+}
+.blog-card-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.blog-date, .blog-read {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  font-weight: 600;
+}
+.blog-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy-800);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.blog-card-excerpt {
+  font-size: 0.87rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.blog-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none;
+  transition: gap var(--transition), color var(--transition);
+}
+.blog-card-link:hover {
+  color: var(--blue-dark);
+  gap: 10px;
+}
+@media (max-width: 640px) {
+  .blog-section { padding: 40px 16px; }
+  .blog-title { font-size: 1.4rem; }
+  .blog-grid { grid-template-columns: 1fr; }
+}
+</style>
+<footer class="footer">
+<div class="footer-logo">
+<svg class="footer-logo-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="38" fill="#1e3a5f" stroke="#3B82F6" stroke-width="1.5"/>
+  <circle cx="40" cy="20" r="5" fill="#60A5FA"/><circle cx="40" cy="60" r="5" fill="#60A5FA"/>
+  <circle cx="20" cy="40" r="5" fill="#60A5FA"/><circle cx="60" cy="40" r="5" fill="#60A5FA"/>
+  <circle cx="25" cy="25" r="4" fill="#93C5FD"/><circle cx="55" cy="25" r="4" fill="#93C5FD"/>
+  <circle cx="25" cy="55" r="4" fill="#93C5FD"/><circle cx="55" cy="55" r="4" fill="#93C5FD"/>
+  <circle cx="40" cy="40" r="7" fill="#3B82F6"/>
+  <line x1="40" y1="25" x2="40" y2="33" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="40" y1="47" x2="40" y2="55" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="25" y1="40" x2="33" y2="40" stroke="#60A5FA" stroke-width="1.5"/>
+  <line x1="47" y1="40" x2="55" y2="40" stroke="#60A5FA" stroke-width="1.5"/>
+</svg>
+<span class="footer-logo-name">FormIA</span>
+</div>
+<div class="footer-text">
+<p>L’annuaire de référence des formations en Intelligence Artificielle &mdash; 2025-2026</p>
+<p style="margin-top:6px;font-size:0.75rem;opacity:0.6;">72 formations &bull; 17 gratuites &bull; 57 certifiantes</p>
+</div>
+</footer>
+<script>var FORMATIONS=[{"Catégorie":"Influenceurs FR","Nom de la formation":"Formation ChatflowAI","Créateur / Organisme":"Yassine Sdiri","Plateforme":"ChatflowAI (en ligne)","Thématiques couvertes":"IA business, automatisation, prompt engineering","Niveau":"Débutant","Langue":"Français","Prix":"72–87€/mois","Certifiante":"Non","Public cible":"Entrepreneurs","Description":"Formation en ligne modulaire pensée pour les entrepreneurs souhaitant intégrer l'IA dans leur activité. Créée par Yassine Sdiri, influenceur IA parmi les plus suivis du monde francophone. Les modules couvrent l'automatisation des tâches, la génération de contenu et l'utilisation de ChatGPT en contexte professionnel. Note Trustpilot : 4.8/5 sur plus de 400 avis.","URL":"https://www.skool.com/intelligenceartificielle/about"},{"Catégorie":"Influenceurs FR","Nom de la formation":"AI Business Academy (AIBA)","Créateur / Organisme":"Influenceur AIBA","Plateforme":"Plateforme propre","Thématiques couvertes":"IA générative, business IA, monétisation","Niveau":"Débutant","Langue":"Français","Prix":"Sur devis","Certifiante":"Non","Public cible":"Entrepreneurs, freelances","Description":"Programme d'accompagnement long terme pour apprendre à construire un business autour de l'IA. Met l'accent sur la pratique concrète plutôt que la théorie, avec une communauté active de membres. S'adresse aux profils souhaitant générer des revenus grâce à l'IA, sans prérequis techniques avancés.","URL":"https://www.theaiba.fr/"},{"Catégorie":"Influenceurs FR","Nom de la formation":"Contenu gratuit ExplorIA","Créateur / Organisme":"ExplorIA","Plateforme":"YouTube","Thématiques couvertes":"Tests outils IA, tutoriels, comparatifs","Niveau":"Débutant","Langue":"Français","Prix":"Gratuit","Certifiante":"Non","Public cible":"Grand public","Description":"Chaîne YouTube francophone dédiée à la découverte et aux tests des outils d'intelligence artificielle du marché. Approche pédagogique et accessible, idéale pour les curieux souhaitant rester informés des dernières nouveautés sans engagement financier. Aucun prérequis nécessaire.","URL":"https://www.youtube.com/@HenriExplorIA"},{"Catégorie":"Influenceurs FR","Nom de la formation":"Tutoriels Micode / Underscore_","Créateur / Organisme":"Micode","Plateforme":"YouTube / Twitch","Thématiques couvertes":"Actualité IA, cybersécurité, tech","Niveau":"Débutant","Langue":"Français","Prix":"Gratuit","Certifiante":"Non","Public cible":"Grand public tech","Description":"Talk-show bimensuel en direct sur Twitch, disponible en replay sur YouTube. Anime des discussions autour de l'IA, de la cybersécurité et de l'actualité tech avec des experts invités. Format interactif permettant aux spectateurs de poser leurs questions en direct. Plus de 842 000 abonnés YouTube.","URL":"https://www.youtube.com/@Underscore_"},{"Catégorie":"Influenceurs FR","Nom de la formation":"Apprendre a coder en Python pour l'Intelligence Artificielle","Créateur / Organisme":"Defend Intelligence","Plateforme":"YouTube","Thématiques couvertes":"Python basics, Numpy, Pandas, data visualization","Niveau":"Débutant","Langue":"Français","Prix":"Gratuit","Certifiante":"Non","Public cible":"Étudiants, Développeurs","Description":"Cours gratuit sous forme de playlist YouTube pour apprendre les bases de la programmation en Python dans le but de s'initier à l'intelligence artificielle.","URL":"https://www.youtube.com/playlist?list=PLlVRzxtr0mQkc54pDYopUwuFoyovYoZiQ"},{"Catégorie":"Influenceurs FR","Nom de la formation":"Tuto Deep Learning avec Tensorflow","Créateur / Organisme":"Defend Intelligence","Plateforme":"YouTube","Thématiques couvertes":"Deep Learning, Tensorflow","Niveau":"Intermédiaire","Langue":"Français","Prix":"Gratuit","Certifiante":"Non","Public cible":"Développeurs","Description":"Playlist de tutoriels sur YouTube pour s'initier au Deep Learning avec la librairie Tensorflow.","URL":"https://www.youtube.com/playlist?list=PLlVRzxtr0mQlbsElZ6SpRzekyBLigBi-C"},{"Catégorie":"Bootcamps intensifs","Nom de la formation":"Bootcamp Data Science & IA","Créateur / Organisme":"Jedha Bootcamp","Plateforme":"Jedha (en ligne / présentiel)","Thématiques couvertes":"ML, Deep Learning, MLOps, IA générative","Niveau":"Avancé","Langue":"Français","Prix":"5 000–10 000€","Certifiante":"Oui","Public cible":"Reconversion professionnelle","Description":"Formation intensive et complète pour devenir Data Scientist ou Ingénieur IA. Jedha est le leader de la formation data en France depuis 2017, ayant accompagné plus de 3 500 professionnels. Couvre l'ensemble du pipeline IA : de la collecte des données à la mise en production de modèles. Éligible au CPF. Disponible en présentiel à Paris et en ligne.","URL":"https://www.jedha.co/formations/formation-data-scientist"},{"Catégorie":"Bootcamps intensifs","Nom de la formation":"Formation Prompt Engineering","Créateur / Organisme":"Jedha Bootcamp","Plateforme":"Jedha","Thématiques couvertes":"Prompt engineering, LLM, ChatGPT","Niveau":"Débutant","Langue":"Français","Prix":"~1 500€","Certifiante":"Oui","Public cible":"Professionnels","Description":"Formation courte et ciblée sur l'art de dialoguer efficacement avec les modèles de langage (ChatGPT, Claude, Mistral). Apprend à construire des prompts précis pour des usages professionnels concrets : rédaction, analyse, code, automatisation. Éligible au CPF. Idéale comme première étape avant une formation plus longue.","URL":"https://www.jedha.co/formations/formation-prompt-engineer"},{"Catégorie":"Bootcamps intensifs","Nom de la formation":"Formation No Code & Automatisation","Créateur / Organisme":"Jedha Bootcamp","Plateforme":"Jedha (75h)","Thématiques couvertes":"No-code, automatisation, IA","Niveau":"Intermédiaire","Langue":"Français","Prix":"~2 500€","Certifiante":"Oui","Public cible":"Non-développeurs","Description":"Programme de 75 heures pour apprendre à automatiser ses tâches professionnelles sans écrire une ligne de code. Utilise des outils comme Zapier, Make (ex-Integromat) et des briques d'IA générative. Parfait pour les profils métier souhaitant gagner en productivité grâce à l'automatisation. Éligible au CPF.","URL":"https://www.jedha.co/formations/formation-no-code"},{"Catégorie":"Bootcamps intensifs","Nom de la formation":"Vibe Coding (450h)","Créateur / Organisme":"Jedha Bootcamp","Plateforme":"Jedha","Thématiques couvertes":"No-code, vibe coding, IA assistée","Niveau":"Intermédiaire","Langue":"Français","Prix":"~4 000€","Certifiante":"Oui","Public cible":"Développeurs assistés IA","Description":"Nouveau programme lancé en 2025, centré sur le développement d'applications assisté par IA (vibe coding). Apprend à créer des logiciels complets en s'appuyant sur des outils comme Cursor, GitHub Copilot et des LLMs. Formation hybride entre no-code et code, pour des profils souhaitant développer vite sans maîtriser tous les langages.","URL":"https://www.jedha.co/formations/formation-product-builder"},{"Catégorie":"Bootcamps intensifs","Nom de la formation":"Masterclass IA Générative","Créateur / Organisme":"Fibre Digitale","Plateforme":"Inter / intra entreprise","Thématiques couvertes":"IA générative, prompt engineering, transformation métier","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis (OPCO / CPF)","Certifiante":"Oui","Public cible":"Cadres, managers, entreprises","Description":"Formation professionnelle dispensée par un formateur certifié en IA générative depuis 2025. Conçue pour être adaptée sur mesure aux besoins de chaque organisation (sessions intra-entreprise). Couvre les fondamentaux de l'IA générative et leur application directe aux métiers : efficacité commerciale, visibilité web, transformation des processus. Financement OPCO ou CPF possible.","URL":"https://fibre-digitale.fr/formations/masterclass-formation-iag-avec-le-cpf-sur-3-jours-en-2026/"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"Google AI Essentials","Créateur / Organisme":"Google","Plateforme":"Coursera","Thématiques couvertes":"Bases de l'IA, productivité IA, Gemini","Niveau":"Débutant","Langue":"Français / Anglais","Prix":"Gratuit (audit) / ~49$/mois","Certifiante":"Oui","Public cible":"Tous profils","Description":"Certification d'entrée de gamme conçue et enseignée par Google. Couvre les fondamentaux de l'IA générative, l'utilisation de Gemini dans un contexte professionnel et les bases de la productivité augmentée par l'IA. Reconnue par les employeurs comme la certification débutant la plus crédible du marché. Disponible en audit gratuit sur Coursera.","URL":"https://www.coursera.org/specializations/ai-essentials-google"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"Google AI Professional Certificate","Créateur / Organisme":"Google","Plateforme":"Coursera","Thématiques couvertes":"IA appliquée, automatisation, Gemini, prise de décision","Niveau":"Intermédiaire","Langue":"Français / Anglais","Prix":"~49$/mois (Coursera+)","Certifiante":"Oui","Public cible":"Professionnels","Description":"Certification professionnelle complète proposée par Google. Permet de construire un portfolio de plus de 20 solutions concrètes intégrant l'IA. Aborde la prise de décision augmentée par l'IA, l'automatisation de workflows et l'usage responsable des outils Google. Idéale pour les profils souhaitant valoriser leurs compétences IA auprès d'employeurs.","URL":"https://www.coursera.org/professional-certificates/google-ai"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"IBM AI Developer Professional Certificate","Créateur / Organisme":"IBM","Plateforme":"Coursera","Thématiques couvertes":"LLM, chatbots, Python, IA générative, Watson","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"~49$/mois","Certifiante":"Oui","Public cible":"Développeurs","Description":"Programme complet d'IBM pour devenir développeur IA opérationnel. Inclut des projets pratiques : assistant vocal avec l'API OpenAI, chatbot avec Llama, traducteur universel avec Flan, résumé de données privées avec des LLMs. Très reconnu en entreprise, notamment dans les environnements utilisant les solutions IBM Cloud.","URL":"https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"Microsoft AI-900 (Azure AI Fundamentals)","Créateur / Organisme":"Microsoft","Plateforme":"Udemy + examen officiel Microsoft","Thématiques couvertes":"Azure IA, ML fondamentaux, vision par ordinateur, NLP","Niveau":"Débutant","Langue":"Anglais","Prix":"~15$ (cours Udemy) + 165$ (examen)","Certifiante":"Oui","Public cible":"Profils enterprise, cloud","Description":"Certification officielle Microsoft validant les connaissances fondamentales en IA sur Azure. Le cours de préparation sur Udemy est bon marché ; l'essentiel du coût réside dans l'examen officiel. Très reconnu dans les environnements Microsoft (finance, santé, gouvernement). Meilleur choix pour les profils ciblant des postes enterprise ou cloud.","URL":"https://www.udemy.com/course/microsoft-certified-azure-ai-fundamentals-ai-900-new/"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"Deep Learning Specialization","Créateur / Organisme":"Andrew Ng / DeepLearning.AI","Plateforme":"Coursera","Thématiques couvertes":"Réseaux de neurones, CNN, RNN, deep learning avancé","Niveau":"Avancé","Langue":"Anglais","Prix":"~49$/mois","Certifiante":"Oui","Public cible":"Data scientists, ingénieurs IA","Description":"Spécialisation en 5 cours considérée comme la référence mondiale en deep learning. Créée par Andrew Ng, co-fondateur de Google Brain et ancien directeur IA de Baidu. Couvre les architectures fondamentales du deep learning et leur application à des problèmes réels. Prérequis : bases de Python et mathématiques. Durée : 4 à 5 mois à raison de 10h/semaine.","URL":"https://www.coursera.org/specializations/deep-learning"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"ChatGPT Prompt Engineering for Developers","Créateur / Organisme":"OpenAI + DeepLearning.AI","Plateforme":"DeepLearning.AI","Thématiques couvertes":"Prompt engineering, API OpenAI, LLM, chatbot","Niveau":"Débutant","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Non","Public cible":"Développeurs","Description":"Cours court (90 minutes) co-créé par Andrew Ng et Isa Fulford (OpenAI). Enseigne les bonnes pratiques du prompt engineering et la construction d'un chatbot personnalisé via l'API OpenAI. Inclut 9 leçons vidéo et 7 exemples de code. Parfait comme point d'entrée avant de s'orienter vers des formations plus longues.","URL":"https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"},{"Catégorie":"Certifications GAFAM","Nom de la formation":"AWS Machine Learning Specialty","Créateur / Organisme":"Amazon Web Services","Plateforme":"AWS Training","Thématiques couvertes":"ML sur AWS, SageMaker, NLP, computer vision","Niveau":"Avancé","Langue":"Anglais","Prix":"300$ (examen)","Certifiante":"Oui","Public cible":"Ingénieurs cloud, ingénieurs ML","Description":"Certification avancée d'Amazon validant la maîtrise du machine learning déployé sur l'infrastructure AWS. Couvre SageMaker, les pipelines ML, le traitement du langage naturel et la vision par ordinateur. Très demandée dans les secteurs cloud, fintech et e-commerce. Prérequis solides en ML et AWS recommandés avant de passer l'examen.","URL":"https://aws.amazon.com/certification/certified-machine-learning-specialty/"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"Objectif IA","Créateur / Organisme":"OpenClassrooms + Gouvernement français","Plateforme":"OpenClassrooms / FUN-MOOC","Thématiques couvertes":"Bases de l'IA, enjeux sociétaux, éthique, applications","Niveau":"Débutant","Langue":"Français","Prix":"Gratuit + certifiant","Certifiante":"Oui","Public cible":"Grand public","Description":"Programme officiel français de sensibilisation à l'intelligence artificielle, co-développé par OpenClassrooms et le gouvernement. Destiné au grand public sans prérequis techniques. Aborde les fondements de l'IA, ses applications dans la société et ses enjeux éthiques. Délivrance d'une attestation officielle à l'issue du parcours. Entièrement gratuit.","URL":"https://openclassrooms.com/courses/6417031-objectif-ia-initiez-vous-a-l-intelligence-artificielle"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"IA avec intelligence ! (MOOC Inria)","Créateur / Organisme":"Inria","Plateforme":"FUN-MOOC","Thématiques couvertes":"Fondamentaux IA, éthique, algorithmes, données","Niveau":"Débutant","Langue":"Français","Prix":"Gratuit","Certifiante":"Non","Public cible":"Grand public, lycéens, enseignants","Description":"MOOC proposé par l'Institut national de recherche en informatique et en automatique (Inria). Aborde l'IA de manière pédagogique et critique, en expliquant comment fonctionnent les algorithmes et quelles sont leurs limites. Très apprécié pour son approche équilibrée entre technique et réflexion éthique. Aucun prérequis nécessaire.","URL":"https://www.fun-mooc.fr/fr/cours/lintelligence-artificielle-avec-intelligence/"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"Elements of AI","Créateur / Organisme":"Université d'Helsinki","Plateforme":"elementsofai.com","Thématiques couvertes":"Bases de l'IA, ML, réseaux de neurones, applications","Niveau":"Débutant","Langue":"Français / Anglais","Prix":"Gratuit + certificat","Certifiante":"Oui","Public cible":"Grand public","Description":"Initiative finlandaise devenue une référence internationale pour l'introduction à l'IA. Disponible en français et dans plus de 20 langues. Aucun prérequis en mathématiques ou en programmation. Certificat délivré à la fin du parcours. Plus d'un million de personnes ont suivi ce cours dans le monde. Format autodidacte à son rythme.","URL":"https://course.elementsofai.com/"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"AI For Everyone","Créateur / Organisme":"Andrew Ng / DeepLearning.AI","Plateforme":"Coursera","Thématiques couvertes":"Stratégie IA, culture IA, cas d'usage, IA en entreprise","Niveau":"Débutant","Langue":"Anglais","Prix":"Gratuit (audit)","Certifiante":"Non","Public cible":"Managers, dirigeants, non-techniciens","Description":"Cours conçu pour comprendre l'IA sans programmer. Explique ce que l'IA peut et ne peut pas faire, comment identifier des projets IA pertinents en entreprise et comment mener une transformation IA. Idéal pour les décideurs souhaitant dialoguer avec des équipes techniques. Très court : environ 6 heures au total.","URL":"https://www.coursera.org/learn/ai-for-everyone"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"Machine Learning Specialization","Créateur / Organisme":"Stanford + DeepLearning.AI","Plateforme":"Coursera","Thématiques couvertes":"ML supervisé, ML non-supervisé, deep learning, bonnes pratiques","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"~49$/mois","Certifiante":"Oui","Public cible":"Data scientists débutants, ingénieurs","Description":"La spécialisation en machine learning la plus suivie au monde sur Coursera. Mise à jour en 2022 par Andrew Ng pour intégrer les dernières avancées. Couvre la régression, la classification, les réseaux de neurones et les systèmes de recommandation. Prérequis : bases de Python. Durée estimée : 3 mois à 10h/semaine.","URL":"https://www.coursera.org/specializations/machine-learning-introduction"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"IA pour les métiers de la communication","Créateur / Organisme":"Cegos","Plateforme":"Cegos (en ligne)","Thématiques couvertes":"IA générative, création de contenu, marketing, communication","Niveau":"Débutant","Langue":"Français","Prix":"Sur devis (CPF)","Certifiante":"Oui","Public cible":"Communicants, marketeurs, chargés de contenu","Description":"Formation métier ciblant les professionnels de la communication souhaitant intégrer l'IA dans leur quotidien sans approche technique. Couvre la génération de textes, d'images et de vidéos, la gestion des réseaux sociaux assistée par IA et les outils de veille intelligente. Financement CPF possible. Orientation pratique et orientée résultats.","URL":"https://www.cegos.fr/formations/communication/lintelligence-artificielle-au-service-des-metiers-de-la-communication"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"Formations IA Lefebvre Dalloz","Créateur / Organisme":"Lefebvre Dalloz Compétences","Plateforme":"Lefebvre Dalloz","Thématiques couvertes":"Droit de l'IA, prompt engineering, IA managériale, IA pour professions réglementées","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis (CPF / OPCO)","Certifiante":"Oui","Public cible":"Avocats, comptables, managers, juristes","Description":"Organisme de formation spécialisé dans les professions réglementées. Propose plusieurs modules IA adaptés aux métiers du droit, de la comptabilité et du management : droit de l'IA, facturation électronique assistée par IA, optimisation des ventes, veille intelligente. Approche très sectorielle et pratique. Éligible CPF et OPCO.","URL":"https://formation.lefebvre-dalloz.fr/formation/intelligence-artificielle-ia"},{"Catégorie":"MOOC & Plateformes","Nom de la formation":"Formations IA Adaliance","Créateur / Organisme":"Adaliance","Plateforme":"Présentiel + distanciel","Thématiques couvertes":"ChatGPT, prompt engineering, usages professionnels","Niveau":"Débutant","Langue":"Français","Prix":"~900€/jour","Certifiante":"Non","Public cible":"Entreprises, salariés, managers","Description":"Formation courte d'une journée, intensive et orientée pratique, pour maîtriser ChatGPT et les techniques de prompting avancées (2 steps, reverse prompting, chaînes de pensées). Conçue pour être directement applicable dans un contexte professionnel. Format adaptable selon le niveau et les objectifs des participants. Disponible en intra-entreprise.","URL":"https://adaliance.com/catalogue-de-formations/formation/729/intelligence-artificielle/"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"Bachelor Chef de Projet IA (Bac+3)","Créateur / Organisme":"Jedha","Plateforme":"Jedha","Thématiques couvertes":"Gestion de projet IA, éthique, gouvernance, IA générative","Niveau":"Avancé","Langue":"Français","Prix":"~8 000€/an","Certifiante":"Oui","Public cible":"Étudiants post-bac, jeunes actifs","Description":"Diplôme de niveau Bac+3 formant des chefs de projet capables de piloter des initiatives IA au sein d'organisations. Combine compétences techniques (bases du ML et de l'IA générative) et compétences managériales (conduite du changement, gouvernance, éthique). Reconnaissance officielle du titre. Financement étudiant ou CPF possible.","URL":"https://www.jedha.co/ecole-ia/bachelor-chef-de-projet-et-ethique-ia"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"Mastère Data Scientist (Bac+5)","Créateur / Organisme":"Jedha","Plateforme":"Jedha","Thématiques couvertes":"IA générative, modélisation avancée, MLOps, deep learning","Niveau":"Avancé","Langue":"Français","Prix":"~10 000€/an","Certifiante":"Oui","Public cible":"Étudiants, professionnels en reconversion","Description":"Formation longue de niveau Bac+5 formant des Data Scientists experts capables de concevoir, déployer et maintenir des modèles IA en production. Couvre l'ensemble du cycle de vie d'un projet IA, de la collecte des données à l'industrialisation. Parcours adapté aux reconversions professionnelles. Financement CPF ou aide à la formation possible.","URL":"https://www.jedha.co/ecole-ia/mastere-data-scientist"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"Stanford AI Graduate Certificate","Créateur / Organisme":"Stanford University","Plateforme":"Stanford Online","Thématiques couvertes":"IA avancée, ML, deep learning, recherche appliquée","Niveau":"Avancé","Langue":"Anglais","Prix":"2 000–9 000$","Certifiante":"Oui","Public cible":"Ingénieurs, chercheurs, data scientists confirmés","Description":"Certificat de troisième cycle proposé par l'université Stanford, l'une des institutions les plus réputées au monde en IA. Programme rigoureux couvrant les concepts fondamentaux et avancés de l'IA et du ML. Idéal pour les profils souhaitant se positionner sur des rôles de recherche ou d'expertise technique de haut niveau. Fort impact sur le CV.","URL":"https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"MIT Professional Certificate ML & IA","Créateur / Organisme":"MIT","Plateforme":"MIT xPRO","Thématiques couvertes":"ML avancé, deep learning, applications industrielles","Niveau":"Avancé","Langue":"Anglais","Prix":"~3 500$","Certifiante":"Oui","Public cible":"Professionnels tech confirmés, ingénieurs","Description":"Certificat professionnel du Massachusetts Institute of Technology (MIT), référence mondiale en ingénierie et technologie. Couvre les algorithmes de machine learning, les réseaux de neurones profonds et leurs applications dans l'industrie. Prérequis solides en mathématiques et en programmation requis. La marque MIT confère une forte crédibilité internationale.","URL":"https://professional.mit.edu/course-catalog/professional-certificate-program-machine-learning-artificial-intelligence-0"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"Programme IA & Management — EDHEC","Créateur / Organisme":"EDHEC Business School","Plateforme":"EDHEC Online","Thématiques couvertes":"Stratégie IA, data analytics, transformation digitale, leadership","Niveau":"Intermédiaire","Langue":"Français","Prix":"~5 000€","Certifiante":"Oui","Public cible":"Cadres, directeurs, dirigeants","Description":"Programme de l'EDHEC Business School destiné aux cadres dirigeants souhaitant piloter la transformation IA de leur organisation. Allie modules stratégiques (gouvernance, conduite du changement) et ateliers pratiques (data analytics, outils no-code). Délivrance d'un certificat EDHEC reconnu. Orienté décision stratégique plutôt que technique.","URL":"https://online.edhec.edu/fr/programmes-formations-a-distance/formation-transformation-digitale/"},{"Catégorie":"Universités & Grandes écoles","Nom de la formation":"IA & Management — IMT Nord Europe","Créateur / Organisme":"IMT Nord Europe","Plateforme":"IMT Nord Europe","Thématiques couvertes":"Management IA, pilotage de projets IA, innovation","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis (OPCO)","Certifiante":"Oui","Public cible":"Managers, cadres, ingénieurs","Description":"Programme alliant management et intelligence artificielle, conçu pour aider les professionnels à intégrer l'IA dans leurs projets d'innovation. Développé en réponse au besoin croissant des cadres de comprendre et piloter des projets IA sans forcément coder. Bonne articulation entre approche théorique et mise en application terrain.","URL":"https://imt-nord-europe.fr/annuaire-formations/management-de-projets-en-intelligence-artificielle/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"IA pour les RH : ateliers pratiques","Créateur / Organisme":"Lamy Liaisons Formations","Plateforme":"Lamy Liaisons","Thématiques couvertes":"IA & prompting, recrutement, onboarding, gestion des compétences, automatisation RH, éthique IA","Niveau":"Débutant","Langue":"Français","Prix":"1040€ HT","Certifiante":"Oui (Qualiopi)","Public cible":"Professionnels des RH, recruteurs","Description":"Formation pratique d'une journée pour intégrer l'IA dans les processus RH, du recrutement à la gestion administrative.","URL":"https://formation.lamy-liaisons.fr/liaisons-sociales/formations/ia-rh"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"L’intelligence artificielle au service des fonctions RH","Créateur / Organisme":"Unow","Plateforme":"Unow","Thématiques couvertes":"IA génératives, prompting, transformation RH, automatisation, data-driven RH","Niveau":"Débutant","Langue":"Français","Prix":"980€ HT","Certifiante":"Oui","Public cible":"Professionnels des RH","Description":"Formation en ligne de 12h pour intégrer l'IA dans les fonctions RH, de la stratégie à l'automatisation des tâches.","URL":"https://www.unow.fr/formations/l-intelligence-artificielle-au-service-des-fonctions-rh/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"L'intelligence artificielle appliquée à la finance","Créateur / Organisme":"First Finance","Plateforme":"First Finance","Thématiques couvertes":"IA en finance, Machine Learning, Big Data, NLP, cas d'usage","Niveau":"Fondamentaux","Langue":"Français","Prix":"1190€","Certifiante":"Oui","Public cible":"Professionnels de la finance","Description":"Formation pour comprendre et appliquer l'IA dans le secteur financier, des fondamentaux aux cas d'usages concrets.","URL":"https://www.first-finance.fr/catalogue/lintelligence-artificielle-appliquee-a-la-finance/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Maîtriser l’IA en finance : Cas pratiques & stratégies gagnantes NIVEAU 2","Créateur / Organisme":"DFCG","Plateforme":"DFCG","Thématiques couvertes":"Prompting avancé, automatisation (PowerQuery, VBA, Python), Agents IA","Niveau":"Intermédiaire","Langue":"Français","Prix":"750€-920€ HT","Certifiante":"Non","Public cible":"Professionnels de la finance","Description":"Formation de perfectionnement pour appliquer des techniques avancées d'IA et d'automatisation dans la finance.","URL":"https://www.dfcg.fr/formation/maitriser-lia-en-finance-cas-pratiques-strategies-gagnantes-niveau-2/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation IA pour avocats et juristes","Créateur / Organisme":"Le Cercle AI","Plateforme":"lecercle.ai","Thématiques couvertes":"IA générative, recherche juridique, analyse de contrats, automatisation","Niveau":"Débutant","Langue":"Français","Prix":"Sur devis","Certifiante":"Non","Public cible":"Avocats, juristes","Description":"Formation intensive pour transformer la pratique juridique avec l'IA, de l'optimisation à la création de nouvelles opportunités.","URL":"https://lecercle.ai/formations/ia-avocats/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation IA pour Avocats — Initiation","Créateur / Organisme":"Boost Academy","Plateforme":"boostacademy.ai","Thématiques couvertes":"Bases de l'IA, ChatGPT, Claude, limites des outils","Niveau":"Débutant","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Avocats","Description":"Initiation pour expérimenter l'IA en toute sécurité dans la pratique juridique. Formation reconnue par le CNB.","URL":"https://boostacademy.ai/formations/formation-ia-avocats-initiation/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation Claude Code pour Non-Développeurs","Créateur / Organisme":"Boost Academy","Plateforme":"boostacademy.ai","Thématiques couvertes":"Claude Code, création de scripts, automatisation sans code","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Avocats, Juristes","Description":"Apprendre à utiliser l'IA pour créer des scripts et automatisations sans compétences de développeur.","URL":"https://boostacademy.ai/formations/formation-claude-code-non-developpeurs/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation IA pour Avocats","Créateur / Organisme":"Boost Academy","Plateforme":"boostacademy.ai","Thématiques couvertes":"Accélération de la recherche juridique avec l'IA","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Avocats","Description":"Formation pour accélérer la recherche juridique de plusieurs heures à quelques minutes grâce à l'IA.","URL":"https://boostacademy.ai/formations/formation-ia-avocats/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation ChatGPT pour Avocats","Créateur / Organisme":"Boost Academy","Plateforme":"boostacademy.ai","Thématiques couvertes":"ChatGPT, prompts juridiques validés, analyse de contrats","Niveau":"Avancé","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Avocats","Description":"Maîtriser ChatGPT pour l'analyse de contrats et l'utilisation de prompts juridiques avancés.","URL":"https://boostacademy.ai/formations/formation-chatgpt-avocats/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Formation Claude pour Avocats","Créateur / Organisme":"Boost Academy","Plateforme":"boostacademy.ai","Thématiques couvertes":"Claude, raisonnement juridique complexe, analyse de documents longs","Niveau":"Avancé","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Avocats","Description":"Utiliser Claude pour des raisonnements juridiques complexes et l'analyse de documents volumineux.","URL":"https://boostacademy.ai/formations/formation-claude-avocats/"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"Potentiel de l'IA en établissement de santé : décryptage et applications","Créateur / Organisme":"EHESP","Plateforme":"EHESP","Thématiques couvertes":"Enjeux et risques de l’IA, Achat et déploiement d'IA, Utilisation des IA en santé","Niveau":"Débutant","Langue":"Français","Prix":"1365€","Certifiante":"Oui","Public cible":"Personnels de santé, managers, directeurs","Description":"Formation pour comprendre et déployer l'IA dans les établissements de santé, des enjeux à la mise en pratique.","URL":"https://formation-continue.ehesp.fr/formation/potentiel-de-lia-en-etablissement-de-sante-decryptage-et-applications"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"D.U. Intelligence artificielle en santé, du médicament au patient","Créateur / Organisme":"Université Paris-Saclay","Plateforme":"Université Paris-Saclay","Thématiques couvertes":"IA en santé, conception de médicaments, analyse de données patient, éthique","Niveau":"Avancé (M1)","Langue":"Français","Prix":"500€-2500€","Certifiante":"Oui (D.U.)","Public cible":"Professionnels de santé, chercheurs, ingénieurs","Description":"Diplôme d'Université formant à la conception et au déploiement de solutions d'IA dans le secteur de la santé, du médicament au patient.","URL":"https://www.pharmacie.universite-paris-saclay.fr/formation/formation-continue-et-validation-des-acquis/diplomes-duniversite-du-et-diplomes-inter-universitaires-diu/du-intelligence-artificielle-en-sante-du-medicament-au-patient"},{"Catégorie":"Formations spécialisées par métier","Nom de la formation":"L'IA en santé : exploitez son potentiel et évitez les erreurs","Créateur / Organisme":"Ifis","Plateforme":"Ifis","Thématiques couvertes":"IA en Santé, Machine Learning, Deep Learning, IA Générative, Réglementation","Niveau":"Débutant","Langue":"Français","Prix":"900€-1300€ HT","Certifiante":"Oui (DPC)","Public cible":"Professionnels de santé et des industries cosmétiques","Description":"Formation d'une journée pour comprendre et manipuler des modèles d'IA simples dans le contexte de la santé.","URL":"https://www.ifis.fr/formations-academie-du-digital-en-sante/adsia"},{"Catégorie":"Bootcamps anglophones","Nom de la formation":"Associate AI Engineer for Developers","Créateur / Organisme":"DataCamp","Plateforme":"DataCamp","Thématiques couvertes":"OpenAI API, Prompt Engineering, Hugging Face, LLMOps, RAG, LangChain","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"Abonnement","Certifiante":"Oui","Public cible":"Développeurs","Description":"Parcours certifiant pour les développeurs souhaitant se spécialiser dans l'intégration de l'IA dans les applications.","URL":"https://www.datacamp.com/tracks/associate-ai-engineer-for-developers"},{"Catégorie":"Bootcamps anglophones","Nom de la formation":"ML Engineering & AI Bootcamp","Créateur / Organisme":"Springboard","Plateforme":"Springboard","Thématiques couvertes":"Machine learning, Deep learning, Python, TensorFlow, Scikit-Learn","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"$9,900","Certifiante":"Oui","Public cible":"Développeurs avec des bases en Python","Description":"Bootcamp intensif avec mentorat individuel et projet de portfolio, certifié par des universités partenaires comme UC San Diego.","URL":"https://www.springboard.com/courses/ai-machine-learning-career-track/"},{"Catégorie":"Bootcamps anglophones","Nom de la formation":"AI Agents Bootcamp","Créateur / Organisme":"Zero to Mastery","Plateforme":"Zero to Mastery","Thématiques couvertes":"Systèmes d'IA autonomes, CrewAI, LangGraph, OpenAI, Stripe","Niveau":"N/A","Langue":"Anglais","Prix":"Abonnement","Certifiante":"Non","Public cible":"Développeurs","Description":"Bootcamp pratique axé sur la construction et le déploiement de systèmes d'agents intelligents.","URL":"https://zerotomastery.io/courses/ai-agents-bootcamp/"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"NVIDIA-Certified Associate - Generative AI LLM","Créateur / Organisme":"NVIDIA","Plateforme":"NVIDIA","Thématiques couvertes":"Développement, intégration et maintenance d'applications IA avec des LLM","Niveau":"Associate","Langue":"Anglais","Prix":"$125","Certifiante":"Oui","Public cible":"Développeurs, Ingénieurs IA","Description":"Certification d'entrée de gamme validant les connaissances fondamentales du développement d'applications avec des LLM et les solutions NVIDIA.","URL":"https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"NVIDIA-Certified Professional - Generative AI LLMs","Créateur / Organisme":"NVIDIA","Plateforme":"NVIDIA","Thématiques couvertes":"Conception, entraînement et optimisation de LLM, fine-tuning, entraînement distribué","Niveau":"Professional","Langue":"Anglais","Prix":"$200","Certifiante":"Oui","Public cible":"Ingénieurs IA, Data Scientists","Description":"Certification professionnelle validant les compétences pour concevoir, entraîner et optimiser des LLM haute-performance.","URL":"https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-professional/"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"NVIDIA-Certified Associate - Accelerated Data Science","Créateur / Organisme":"NVIDIA","Plateforme":"NVIDIA","Thématiques couvertes":"Concepts de data science accélérée par GPU, préparation de données, développement de modèles","Niveau":"Associate","Langue":"Anglais","Prix":"$125","Certifiante":"Oui","Public cible":"Data Scientists, Analystes","Description":"Valide la compréhension des concepts de la data science accélérée par GPU pour les workflows de bout en bout.","URL":"https://www.nvidia.com/en-us/learn/certification/accelerated-data-science-associate/"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"NVIDIA-Certified Professional - Accelerated Data Science","Créateur / Organisme":"NVIDIA","Plateforme":"NVIDIA","Thématiques couvertes":"Utilisation des outils et bibliothèques accélérés par GPU pour les workflows de data science","Niveau":"Professional","Langue":"Anglais","Prix":"$200","Certifiante":"Oui","Public cible":"Data Scientists, Ingénieurs ML","Description":"Démontre la maîtrise de l'utilisation des outils et bibliothèques accélérés par GPU pour des workflows de data science complexes.","URL":"https://www.nvidia.com/en-us/learn/certification/accelerated-data-science-professional/"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"Meta Data Analyst Professional Certificate","Créateur / Organisme":"Meta","Plateforme":"Coursera","Thématiques couvertes":"Analyse de données, SQL, Python, Tableau, IA Générative, bases du Machine Learning","Niveau":"Débutant","Langue":"Anglais","Prix":"Abonnement Coursera","Certifiante":"Oui","Public cible":"Analystes de données, débutants en reconversion","Description":"Certificat professionnel d'entrée de gamme qui inclut une introduction aux compétences IA pour l'analyse de données.","URL":"https://www.coursera.org/professional-certificates/meta-data-analyst"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"The Hugging Face LLM Course","Créateur / Organisme":"Hugging Face","Plateforme":"huggingface.co","Thématiques couvertes":"Modèles Transformer, Bibliothèques Hugging Face (Transformers, Datasets, Tokenizers), NLP","Niveau":"N/A","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Non","Public cible":"Développeurs, Chercheurs","Description":"Cours complet et gratuit pour maîtriser les LLM et le NLP avec l'écosystème Hugging Face.","URL":"https://huggingface.co/learn/llm-course/chapter1/1"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"Deep Reinforcement Learning Course","Créateur / Organisme":"Hugging Face","Plateforme":"huggingface.co","Thématiques couvertes":"Apprentissage par renforcement profond, Q-Learning, Policy Gradients, Systèmes multi-agents","Niveau":"N/A","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Oui","Public cible":"Développeurs, Chercheurs","Description":"Cours pratique et certifiant pour apprendre les fondamentaux du Deep RL et entraîner des agents.","URL":"https://huggingface.co/learn/deep-rl-course/unit0/introduction"},{"Catégorie":"Certifications cloud & tech","Nom de la formation":"Salesforce Certified AI Associate Certification","Créateur / Organisme":"Salesforce / Packt","Plateforme":"Coursera","Thématiques couvertes":"Fondamentaux de l'IA, Einstein Prediction Builder, Einstein Bots, Éthique de l'IA","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"Abonnement Coursera","Certifiante":"Oui","Public cible":"Professionnels du CRM, Administrateurs Salesforce","Description":"Cours de préparation à la certification officielle de Salesforce, axé sur l'application de l'IA dans l'écosystème Salesforce.","URL":"https://www.coursera.org/learn/packt-salesforce-certified-ai-associate-certification-a3r1f"},{"Catégorie":"MOOCs gratuits","Nom de la formation":"Practical Deep Learning for Coders","Créateur / Organisme":"fast.ai","Plateforme":"course.fast.ai","Thématiques couvertes":"Deep learning, computer vision, NLP, PyTorch, fastai, Hugging Face, Stable Diffusion","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Non","Public cible":"Développeurs avec expérience en code","Description":"Cours pratique et gratuit, conçu pour les codeurs, pour apprendre à appliquer le deep learning à des problèmes réels.","URL":"https://course.fast.ai/"},{"Catégorie":"MOOCs gratuits","Nom de la formation":"Intro to Machine Learning","Créateur / Organisme":"Kaggle Learn","Plateforme":"Kaggle","Thématiques couvertes":"Concepts fondamentaux du ML, construction de premiers modèles","Niveau":"Débutant","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Oui","Public cible":"Débutants en data science","Description":"Cours pour apprendre les idées fondamentales du machine learning et construire ses premiers modèles.","URL":"https://www.kaggle.com/learn/intro-to-machine-learning"},{"Catégorie":"MOOCs gratuits","Nom de la formation":"Intro to Deep Learning","Créateur / Organisme":"Kaggle Learn","Plateforme":"Kaggle","Thématiques couvertes":"TensorFlow, Keras, construction et entraînement de réseaux de neurones","Niveau":"Débutant","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Oui","Public cible":"Débutants en deep learning","Description":"Cours pour utiliser TensorFlow et Keras afin de construire et entraîner des réseaux de neurones pour des données structurées.","URL":"https://www.kaggle.com/learn/intro-to-deep-learning"},{"Catégorie":"MOOCs gratuits","Nom de la formation":"Computer Vision","Créateur / Organisme":"Kaggle Learn","Plateforme":"Kaggle","Thématiques couvertes":"Réseaux de neurones convolutifs, TensorFlow, Keras","Niveau":"Intermédiaire","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Oui","Public cible":"Développeurs, Data Scientists","Description":"Cours pour construire des réseaux de neurones convolutifs avec TensorFlow et Keras.","URL":"https://www.kaggle.com/learn/computer-vision"},{"Catégorie":"MOOCs gratuits","Nom de la formation":"Intro to AI Ethics","Créateur / Organisme":"Kaggle Learn","Plateforme":"Kaggle","Thématiques couvertes":"Outils pratiques pour guider la conception morale des systèmes d'IA","Niveau":"Débutant","Langue":"Anglais","Prix":"Gratuit","Certifiante":"Oui","Public cible":"Tous publics","Description":"Cours pour explorer les outils pratiques guidant la conception morale des systèmes d'IA.","URL":"https://www.kaggle.com/learn/intro-to-ai-ethics"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Digital, Data & IA","Créateur / Organisme":"HEC Paris","Plateforme":"HEC Paris (Executive Education)","Thématiques couvertes":"Digital, Data, IA, stratégie, transformation digitale","Niveau":"Avancé","Langue":"Français","Prix":"3 100€","Certifiante":"Oui","Public cible":"Cadres dirigeants, managers","Description":"Programme court de 2 jours pour les dirigeants souhaitant comprendre les enjeux stratégiques de la data et de l'IA.","URL":"https://www.hec.edu/fr/executive-education/nos-programmes-pour-les-particuliers/par-domaine-de-formation/digital-data-ia"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"AI Ready for Business","Créateur / Organisme":"HEC Paris","Plateforme":"HEC Paris (Executive Education)","Thématiques couvertes":"Fondamentaux de l'IA, impact business, évaluation critique des solutions IA","Niveau":"Intermédiaire","Langue":"Français","Prix":"6 100€","Certifiante":"Oui","Public cible":"Dirigeants, cadres supérieurs","Description":"Programme pour fournir une compréhension solide des principes fondamentaux de l'IA et permettre d'évaluer son impact de manière critique.","URL":"https://www.hec.edu/fr/executive-education/ai-ready-business-en-francais"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Construire une stratégie Data et IA","Créateur / Organisme":"HEC Paris & École Polytechnique (Hi! PARIS)","Plateforme":"HEC Paris (Executive Education)","Thématiques couvertes":"Stratégie data, IA, gouvernance des données, déploiement de projets IA","Niveau":"Avancé","Langue":"Français","Prix":"6 100€","Certifiante":"Oui","Public cible":"Dirigeants, CDO, CTO","Description":"Programme conjoint HEC Paris et École Polytechnique pour construire et déployer une stratégie data et IA au sein de son organisation.","URL":"https://www.hec.edu/fr/executive-education/construire-une-strategie-data-et-ia"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"MSc Data Science & AI for Business (X-HEC)","Créateur / Organisme":"HEC Paris & École Polytechnique","Plateforme":"HEC Paris / Polytechnique","Thématiques couvertes":"Data science, Machine Learning, Deep Learning, IA appliquée au business","Niveau":"Avancé","Langue":"Anglais","Prix":"~45 000€","Certifiante":"Oui (MSc)","Public cible":"Étudiants Bac+4/5, jeunes professionnels","Description":"Master of Science combinant l'excellence scientifique de Polytechnique et l'expertise business de HEC Paris en data science et IA.","URL":"https://www.hec.edu/en/master-s-programs/master-science-data-science-ai-business-x-hec"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Sciences des données & Intelligence Artificielle","Créateur / Organisme":"CentraleSupélec","Plateforme":"CentraleSupélec","Thématiques couvertes":"IA, data science, deep learning, robotique, NLP","Niveau":"Avancé","Langue":"Français/Anglais","Prix":"Frais universitaires","Certifiante":"Oui (Master/Ingénieur)","Public cible":"Étudiants ingénieurs, chercheurs","Description":"Pôle d'excellence en IA avec le Hub IA de CentraleSupélec, regroupant formation, recherche et projets innovants en IA et science des données.","URL":"https://exed.centralesupelec.fr/formation/executive-certificateintelligence-artificielle-sciences-des-donnees/"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Formation Intelligence Artificielle","Créateur / Organisme":"Mines Paris-PSL (Executive Education)","Plateforme":"Mines Paris-PSL","Thématiques couvertes":"Machine Learning, Deep Learning, NLP, Computer Vision, IA industrielle","Niveau":"Intermédiaire/Avancé","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Ingénieurs, managers, professionnels en activité","Description":"Formations courtes et certifiantes en IA dispensées par les enseignants-chercheurs de Mines Paris-PSL, couvrant les fondamentaux aux applications industrielles.","URL":"https://executive-education.minesparis.psl.eu/competences/intelligence-artificielle/"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Transformation digitale des organisations","Créateur / Organisme":"Sciences Po","Plateforme":"Sciences Po (Executive Education)","Thématiques couvertes":"Transformation digitale, IA, gouvernance numérique, impact sociétal","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Cadres, managers, responsables de la transformation","Description":"Formation pour comprendre et piloter la transformation digitale des organisations, incluant les enjeux liés à l'IA.","URL":"https://www.sciencespo.fr/executive-education/fr/programmes-pour-les-individus/digital-transformation-des-organisations/"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"IA pour les communicants et les marketeurs","Créateur / Organisme":"Sciences Po","Plateforme":"Sciences Po (Executive Education)","Thématiques couvertes":"IA générative, communication, marketing, stratégie de contenu","Niveau":"Débutant","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui","Public cible":"Communicants, marketeurs","Description":"Programme court pour comprendre les capacités de l'IA générative et son impact sur les métiers de la communication et du marketing.","URL":"https://www.sciencespo.fr/executive-education/fr/programmes-pour-les-individus/programmes-courts/a-la-decouverte-de-l-ia-pour-les-communicants-et-les-marketeurs/"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Executive Master Data, IA & Marketing","Créateur / Organisme":"Sciences Po Grenoble-UGA","Plateforme":"Sciences Po Grenoble","Thématiques couvertes":"Data science, IA, marketing digital, stratégie data-driven","Niveau":"Avancé","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui (Executive Master)","Public cible":"Professionnels du marketing, cadres","Description":"Executive Master pour maîtriser la data et l'IA appliquées au marketing et à la stratégie d'entreprise.","URL":"https://www-lba.sciencespo-grenoble.fr/executive-master-data-ia-marketing"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Certificat Intelligence Artificielle (IA) for Business","Créateur / Organisme":"ESCP Business School","Plateforme":"ESCP (en ligne)","Thématiques couvertes":"Fondamentaux de l'IA, enjeux business, innovation, créativité, agilité","Niveau":"Intermédiaire","Langue":"Français","Prix":"Sur devis","Certifiante":"Oui (Certificat)","Public cible":"Managers, dirigeants, professionnels","Description":"Certificat en ligne donnant les clés pour comprendre l'IA, ses enjeux et ses impacts dans les organisations. Formation flexible et certifiante.","URL":"https://escp.eu/fr/programmes/open-programmes/certificat-intelligence-artificielle-ia-business"},{"Catégorie":"Formations académiques françaises","Nom de la formation":"Visual & Creative AI (ViCAI)","Créateur / Organisme":"École Polytechnique","Plateforme":"École Polytechnique","Thématiques couvertes":"IA visuelle, deep learning, robotique, réalité augmentée","Niveau":"Avancé","Langue":"Anglais","Prix":"Frais universitaires","Certifiante":"Oui (Master)","Public cible":"Étudiants Bac+4/5, chercheurs","Description":"Cursus anglophone de haut niveau axé sur l'IA visuelle, le deep learning, la robotique et la réalité augmentée.","URL":"https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master"}];</script>
+<script>(function(){
+'use strict';
+
+// Category -> CSS class mapping
+var CAT_CLASS = {
+  'Influenceurs FR': 'influenceurs',
+  'MOOC & Plateformes': 'mooc-plateformes',
+  'MOOCs gratuits': 'mooc-gratuits',
+  'Bootcamps intensifs': 'bootcamp-fr',
+  'Bootcamps anglophones': 'bootcamp-en',
+  'Certifications GAFAM': 'certif-gafam',
+  'Certifications cloud & tech': 'certif-cloud',
+  'Formations académiques françaises': 'formations-acad',
+  'Universités & Grandes écoles': 'univ',
+  'Formations spécialisées par métier': 'metiers'
+};
+
+// Category display labels (shortened for pills)
+var CAT_LABELS = {
+  'Influenceurs FR': 'Influenceurs FR',
+  'MOOC & Plateformes': 'MOOC & Plateformes',
+  'MOOCs gratuits': 'MOOCs gratuits',
+  'Bootcamps intensifs': 'Bootcamps FR',
+  'Bootcamps anglophones': 'Bootcamps EN',
+  'Certifications GAFAM': 'Certif. GAFAM',
+  'Certifications cloud & tech': 'Cloud & Tech',
+  'Formations académiques françaises': 'Académiques FR',
+  'Universités & Grandes écoles': 'Universités',
+  'Formations spécialisées par métier': 'Par métier'
+};
+
+function getLevelClass(niveau) {
+  var n = (niveau||'').toLowerCase();
+  if (n.indexOf('débutant') !== -1 || n.indexOf('debutant') !== -1 || n.indexOf('fondamentaux') !== -1) return 'deb';
+  if (n.indexOf('intermédiaire') !== -1 || n.indexOf('intermediaire') !== -1) return 'int';
+  if (n.indexOf('avancé') !== -1 || n.indexOf('avance') !== -1) return 'adv';
+  return 'other';
+}
+
+function getLangFlag(langue) {
+  var l = (langue||'').toLowerCase();
+  if (l === 'français') return '🇫🇷';
+  if (l === 'anglais') return '🇬🇧';
+  if (l.indexOf('français') !== -1 && l.indexOf('anglais') !== -1) return '🇫🇷 🇬🇧';
+  return '🌐';
+}
+
+function isFree(prix) {
+  return prix && prix.toLowerCase().indexOf('gratuit') !== -1;
+}
+
+function isCertif(certif) {
+  return certif && certif.toLowerCase().startsWith('oui');
+}
+
+function escHtml(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function truncate(s, n) {
+  s = s||'';
+  return s.length > n ? s.slice(0,n) + '\u2026' : s;
+}
+
+function catClass(cat) {
+  return CAT_CLASS[cat] || 'mooc-plateformes';
+}
+
+function buildCard(f) {
+  var cat = f['\u0043at\u00e9gorie'] || '';
+  var nom = f['Nom de la formation'] || '';
+  var createur = f['Cr\u00e9ateur / Organisme'] || '';
+  var plateforme = f['Plateforme'] || '';
+  var themes = f['Th\u00e9matiques couvertes'] || '';
+  var niveau = f['Niveau'] || '';
+  var langue = f['Langue'] || '';
+  var prix = f['Prix'] || '';
+  var certif = f['Certifiante'] || '';
+  var desc = f['Description'] || '';
+  var url = f['URL'] || '#';
+
+  var cc = catClass(cat);
+  var levelCls = getLevelClass(niveau);
+  var flag = getLangFlag(langue);
+  var free = isFree(prix);
+  var certifOui = isCertif(certif);
+
+  var themeList = themes.split(',').map(function(t){ return t.trim(); }).filter(Boolean).slice(0,3);
+  var themeHtml = themeList.map(function(t){
+    return '<span class="theme-tag">' + escHtml(t) + '</span>';
+  }).join('');
+
+  var html = '<div class="card" data-cat="' + escHtml(cat) + '">';
+  html += '<div class="card-accent accent-' + cc + '"></div>';
+  html += '<div class="card-body">';
+  html += '<div class="card-top">';
+  html += '<span class="badge cat-' + cc + '">' + escHtml(CAT_LABELS[cat]||cat) + '</span>';
+  html += '<span class="badge badge-level-' + levelCls + '">' + escHtml(niveau||'N/A') + '</span>';
+  html += '</div>';
+  html += '<div class="card-title">' + escHtml(nom) + '</div>';
+  html += '<div class="card-meta">';
+  html += '<div class="card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="card-meta-val">' + escHtml(createur) + '</span></div>';
+  html += '<div class="card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="card-meta-val">' + escHtml(plateforme) + '</span></div>';
+  html += '</div>';
+  if (themeHtml) html += '<div class="card-themes">' + themeHtml + '</div>';
+  html += '<div class="card-desc">' + escHtml(truncate(desc, 160)) + '</div>';
+  html += '</div>';
+  html += '<div class="card-footer">';
+  html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
+  html += '<span class="card-price' + (free?' free':'') + '">' + escHtml(prix) + '</span>';
+  if (certifOui) html += '<span class="badge badge-certif">\u2713 Certifiante</span>';
+  html += '</div>';
+  html += '<div style="display:flex;align-items:center;gap:8px">';
+  html += '<span class="card-lang" title="' + escHtml(langue) + '">' + flag + '</span>';
+  html += '<a href="' + escHtml(url) + '" target="_blank" rel="noopener" class="btn-voir">Voir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>';
+  html += '</div>';
+  html += '</div></div>';
+  return html;
+}
+
+var activeCategory = 'all';
+var searchQuery = '';
+
+function normalize(s) {
+  return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+}
+
+function filterAndRender() {
+  var grid = document.getElementById('cardsGrid');
+  var empty = document.getElementById('emptyState');
+  var countEl = document.getElementById('resultsCount');
+  var q = normalize(searchQuery);
+  var count = 0;
+  var html = '';
+
+  for (var i=0; i<FORMATIONS.length; i++) {
+    var f = FORMATIONS[i];
+    var cat = f['\u0043at\u00e9gorie']||'';
+    if (activeCategory !== 'all' && cat !== activeCategory) continue;
+    if (q) {
+      var haystack = normalize(
+        (f['Nom de la formation']||'') + ' ' +
+        (f['Cr\u00e9ateur / Organisme']||'') + ' ' +
+        (f['Th\u00e9matiques couvertes']||'') + ' ' +
+        (f['Plateforme']||'') + ' ' +
+        (f['Description']||'')
+      );
+      if (haystack.indexOf(q) === -1) continue;
+    }
+    html += buildCard(f);
+    count++;
+  }
+
+  grid.innerHTML = html;
+  if (count === 0) {
+    empty.style.display = 'block';
+    grid.style.display = 'none';
+  } else {
+    empty.style.display = 'none';
+    grid.style.display = 'grid';
+  }
+  countEl.textContent = count + ' formation' + (count > 1 ? 's' : '');
+}
+
+function initPills() {
+  var container = document.getElementById('pillsContainer');
+  var cats = [];
+  var seen = {};
+  for (var i=0; i<FORMATIONS.length; i++) {
+    var c = FORMATIONS[i]['\u0043at\u00e9gorie']||'';
+    if (c && !seen[c]) { cats.push(c); seen[c]=true; }
+  }
+
+  var html = '<span class="pills-label">Cat\u00e9gorie :</span>';
+  html += '<button class="pill pill-all active" data-cat="all" onclick="setCat(this,\'all\')">Toutes les formations</button>';
+  for (var j=0; j<cats.length; j++) {
+    var cat = cats[j];
+    var cc = catClass(cat);
+    var label = CAT_LABELS[cat]||cat;
+    html += '<button class="pill cat-'+cc+'" data-cat="'+escHtml(cat)+'" onclick="setCat(this,\''+escHtml(cat).replace(/'/g,"\\'")+'\')">';
+    html += '<span class="pill-dot" style="background:currentColor"></span>';
+    html += escHtml(label)+'</button>';
+  }
+  container.innerHTML = html;
+}
+
+window.setCat = function(el, cat) {
+  activeCategory = cat;
+  var pills = document.querySelectorAll('.pill');
+  for (var i=0; i<pills.length; i++) pills[i].classList.remove('active');
+  el.classList.add('active');
+  filterAndRender();
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  initPills();
+  filterAndRender();
+  var inp = document.getElementById('searchInput');
+  inp.addEventListener('input', function(){
+    searchQuery = inp.value;
+    filterAndRender();
+  });
+});
+
+})();
+</script>
+</body>
+</html>
