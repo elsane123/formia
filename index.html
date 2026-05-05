@@ -303,6 +303,22 @@ body { font-family: var(--font); background: var(--gray-50); color: var(--navy-8
 </script>
 </head>
 <body>
+<style>
+.promo-banner{background:linear-gradient(90deg,#1E293B 0%,#1a2744 50%,#1E293B 100%);border-bottom:2px solid rgba(59,130,246,0.5);padding:11px 20px;text-align:center;position:sticky;top:0;z-index:500;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;box-shadow:0 2px 16px rgba(59,130,246,0.18)}
+.promo-banner-text{font-size:0.88rem;color:rgba(255,255,255,0.88);font-weight:500;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+.promo-banner-text strong{color:#fff;font-weight:800}
+.promo-banner-link{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:6px;background:linear-gradient(135deg,#3B82F6,#2563EB);color:#fff;font-size:0.82rem;font-weight:700;text-decoration:none;white-space:nowrap;transition:transform 0.15s,box-shadow 0.15s;box-shadow:0 2px 10px rgba(59,130,246,0.4);flex-shrink:0}
+.promo-banner-link:hover{transform:translateY(-1px);box-shadow:0 4px 18px rgba(59,130,246,0.6)}
+.promo-banner-close{background:none;border:none;color:rgba(255,255,255,0.4);font-size:1.2rem;cursor:pointer;padding:4px 8px;line-height:1;margin-left:8px;transition:color 0.15s;flex-shrink:0}
+.promo-banner-close:hover{color:#fff}
+</style>
+<div class="promo-banner" id="promoBanner">
+  <span class="promo-banner-text">
+    &#128640; <strong>Nouvelle formation&nbsp;:</strong> Sales IA Masterclass &mdash; Prospectez 3x plus vite, concluez 2x plus &bull; <strong>Acc&egrave;s Early Bird &agrave; 297&euro;</strong>
+  </span>
+  <a href="pre-inscription-sales-ia-masterclass.html" class="promo-banner-link">Je m&rsquo;inscris &#8594;</a>
+  <button class="promo-banner-close" onclick="document.getElementById('promoBanner').style.display='none'" aria-label="Fermer">&times;</button>
+</div>
 <header class="hero">
 <div class="hero-bg"></div>
 <div class="hero-grid"></div>
